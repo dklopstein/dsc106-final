@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Chart initialization and update functions
   function initializeChart() {
     // Load data
-    d3.csv("/CGMacros_merge.csv").then(function (data) {
+    d3.csv("https://raw.githubusercontent.com/dklopstein/dsc106-final/refs/heads/main/CGmacros_merge.csv").then(function (data) {
       // Convert data types
       data.forEach((d) => {
         d.Timestamp = new Date(d.Timestamp);
